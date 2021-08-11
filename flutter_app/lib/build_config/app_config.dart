@@ -14,7 +14,7 @@ class AppConfig extends InheritedWidget {
   final String apiBaseUrl;
 
   static AppConfig of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(AppConfig);
+    return context.dependOnInheritedWidgetOfExactType<AppConfig>();
   }
 
   @override
